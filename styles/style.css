@@ -28,12 +28,18 @@ div {
   border: 1px solid red;
 }
 
-.logo_place_header {
+.logo {
+  width: 228px;
+  height: 32px;
+  z-index: 1;
+
+}
+
+.logo__place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 228px;
-  z-index: 1;
 }
 
 .header__title {
@@ -79,8 +85,8 @@ div {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 765px;
-  max-height: 608px;
+  width: 765px;
+  height: 608px;
 }
 
 .description {
@@ -112,6 +118,7 @@ div {
   flex-direction: column;
   align-items: center;
   width: 80%;
+  margin: 0;
 }
 
 .two-columns__paragraph {
@@ -130,9 +137,6 @@ div {
   width: 1100px;
   margin: 0 auto 100px;
   justify-content: center;
-  row-gap: 60px;
-
-
 }
 
 .section-title {
@@ -142,22 +146,19 @@ div {
   text-align: center;
   margin: 100px auto 0;
   width: 60%;
-
 }
 
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
   text-align: center;
-  margin: 20px auto 60px;
+  margin: 20px auto 0;
   width: 60%;
-
 }
 
 .table__cell {
   width: 250px;
-  margin: 0 auto;
-
+  margin: 60px auto 0;
 }
 
 .table__heading {
@@ -186,6 +187,7 @@ div {
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: bottom;
+  margin-bottom: 0;
 }
 
 .feynman__title {
@@ -213,6 +215,16 @@ div {
   right: 48px;
 }
 
+.kaufman {
+  background-color: #1f1f1f;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title__theme_dark {
+  margin: 90px auto 0;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -220,4 +232,71 @@ div {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 2;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  height: 877px;
+  width: 877px;
+  right: -210px;
+  z-index: 0;
+  top: 0;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  min-height: 350px;
+  box-sizing: border-box;
+  overflow: hidden
+}
+
+.footer__colunms{
+  width: 90%;
+  flex-basis: 711px;
+  margin: 60px auto 40px;
+  flex-direction: row;
+}
+
+.footer__column {
+}
+
+.footer__column_content_copyright{
+
+}
+
+.logo__place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author {
+  position: relative;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.footer__column_content_info{
+
+}
+
+.footer__colunm-heading{
+
+}
+
+.footer__column-links{
+
+}
+
+.footer__column-link {
+
+}
+
+.footer__link{
+  text-decoration: none;
+}
+
+.footer__column_content_social {
+
 }
