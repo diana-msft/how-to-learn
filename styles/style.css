@@ -116,6 +116,7 @@
   font-size: 24px;
   margin: 0;
 }
+/* отступ между параграфами сделала с помощью row-gap с флексом в селекторе two-columns__main-text*/
 
 .two-columns__span-accent {
   font-weight: 600;
@@ -124,9 +125,8 @@
 .table {
   display: flex;
   flex-wrap: wrap;
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto 100px;
-  justify-content: center;
 }
 
 .section-title {
@@ -136,7 +136,6 @@
   text-align: center;
   margin: 100px auto 0;
   width: 60%;
-
 }
 
 .section-subtitle {
@@ -166,7 +165,6 @@
   font-size: 18px;
   margin: 0;
   margin-top: 20px;
-
 }
 
 .feynman {
@@ -228,6 +226,10 @@
   z-index: 1;
 }
 
+.table_theme_dark {
+  margin: 0 auto 90px;
+}
+
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
@@ -240,10 +242,10 @@
 }
 
 .footer {
+  display: flex;
   background-color: #1f1f1f;
   color: white;
   min-height: 350px;
-  overflow: hidden;
   font-size: 18px;
   box-sizing: border-box;
   padding: 60px 0 40px;
@@ -255,28 +257,22 @@
 
 .footer__columns {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   width: 90%;
-  margin: auto;
-}
+  margin: 0 auto;
 
-.footer__column {
-  min-height: 250px;
 }
 
 .footer__column_content_copyright {
+  display: flex;
   flex-basis: 711px;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-between
 }
 
 .footer__author {
   line-height: 25px;
   font-size: 18px;
-  margin: 18px auto;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .footer__column-heading {
@@ -290,6 +286,7 @@
   list-style-type: none;
   text-decoration: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer__column-link {
@@ -302,13 +299,6 @@
 .footer__column_content_info {
   margin-right: 20px;
 }
-
-/* .footer__columns_info {
-  display: flex;
-  margin: 0 auto 16px;
-  flex-basis: 711px;
-  justify-content: space-around;
-} */
 
 .footer__social-icon {
   margin-right: 10px;
