@@ -2,9 +2,9 @@
   width: 920px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto 100px auto;
+  margin: 60px auto 0;
   padding: 0;
   list-style: none;
   justify-content: flex-start;
-  text-align: center;
+  gap: 60px 100px;
 }
