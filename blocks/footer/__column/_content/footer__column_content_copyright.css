@@ -2,5 +2,6 @@
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
 }
